@@ -2,10 +2,12 @@ name: hello-world
 on: push
 jobs:
  my-job:
-   runs-on: macos-11
+   runs-on: windows-latest
    steps: 
      - name: message
-       run: echo "Hello world"
+       shell: pwsh
+       run: |
+         gci env:* | sort-object name
    
  
  
