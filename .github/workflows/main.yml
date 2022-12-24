@@ -10,5 +10,5 @@ jobs:
        shell: pwsh
        run: docker build -t karrisudhakar/public-git-repo .
      - name: Push Image
-       shell: pwsh
+       shell: cmd
        run: docker push karrisudhakar/public-git-repo
